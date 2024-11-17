@@ -101,6 +101,7 @@ wget -O - http://web:80/
 ```
 
 You should see "Welcome to NGINX!" if the web server is running correctly. Exit the shell by typing `exit`.
+![mailer-log](./assets/monitor-01.webp)
 
 ### Step 4: Start the Agent Container
 
@@ -155,6 +156,7 @@ docker run -it --name agent --link web:insideweb --link mailer:insidemailer watc
 ```
 
 Detach from the interactive container by pressing `Ctrl + P` followed by `Ctrl + Q`.
+![watcher-log](./assets/monitor-02.webp)
 
 ## Managing Containers
 
@@ -218,6 +220,8 @@ Look for a line like:
 ```
 Sending email: To: admin@work Message: The service is down!
 ```
+![final-log](./assets/monitor-03.webp)
+
 
 ## Conclusion
 
