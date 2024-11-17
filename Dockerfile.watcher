@@ -1,0 +1,9 @@
+FROM busybox
+
+WORKDIR /app
+
+COPY watcher/watcher.sh /app/watcher/watcher.sh
+RUN chmod a+x /app/watcher/watcher.sh
+
+EXPOSE 33333
+CMD ["/app/watcher/watcher.sh"]
