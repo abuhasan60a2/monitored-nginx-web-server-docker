@@ -10,7 +10,7 @@ We are going to create a new website that requires close monitoring. We will use
 2. **Mailer Container**: Sends email notifications.
 3. **Agent Container**: Monitors the web server and triggers the mailer when the server is down.
 
-![Architecture Diagram](./assets/scenerio-monitor.webp)
+![Architecture Diagram](./assets/diagram.webp)
 
 ## Creating and Starting Containers
 
